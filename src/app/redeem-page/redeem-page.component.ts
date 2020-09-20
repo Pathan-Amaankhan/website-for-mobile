@@ -13,8 +13,8 @@ export class RedeemPageComponent implements OnInit {
   }
 
   changeThePanel(offElement) {
-    offElement.target.innerText = (offElement.target.innerText === 'Paytm') ? 'Medimetry' : 'Paytm';
-    document.getElementsByClassName('on-side')[0].innerHTML = (offElement.target.innerText === 'Paytm') ? 'Medimetry' : 'Paytm';
+    offElement.target.innerText = (offElement.target.innerText === 'Paytm') ? 'Poornima' : 'Paytm';
+    document.getElementsByClassName('on-side')[0].innerHTML = (offElement.target.innerText === 'Paytm') ? 'Poornima' : 'Paytm';
   }
 
 }

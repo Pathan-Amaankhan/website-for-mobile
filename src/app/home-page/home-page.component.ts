@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -21,10 +21,6 @@ export class HomePageComponent implements OnInit {
       ['assets/images/wallet-icon.png', 'Wallet', '#F1C40F', '/wallet'],
       ['assets/images/decentralized-icon.svg', 'Refer & Earn', '#E67E22', '/share']
     ];
-  }
-  logOut() {
-    localStorage.clear();
-    window.location.replace('/sign-in');
   }
 
   ngOnInit(): void {
