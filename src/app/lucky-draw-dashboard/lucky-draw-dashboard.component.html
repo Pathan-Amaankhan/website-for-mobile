@@ -1,0 +1,67 @@
+<div class="light-to-dark-teal go-full-screen-box">
+  <div class="ui container">
+    <div class="ui grid p-15">
+      <app-sub-components-redeem-request-modal [image-src]="'assets/images/success-tick-icon.png'" [success-text]="'Participation Accepted'"></app-sub-components-redeem-request-modal>
+      <div class="row">
+        <div class="five wide column">
+          <img src="assets/images/left-arrow.png" class="ui icon" [routerLink]="'/home'">
+        </div>
+        <div class="eleven wide column font-size-5vw" style="color: white;"></div>
+      </div>
+
+      <div class="row" style="padding-top: 1.5em;">
+        <div class="sixteen wide column">
+          <div class="bold-font-weight font-roboto text-white font-size-9vw">Lucky Draw</div>
+          <div class="font-rancho text-white pt-5 line-height-normal" style="font-size: 5vw;">One lucky winner, for every contest chose randomly by the editor.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="sixteen wide column">
+          <div class="ui top attached tabular menu">
+            <div class="active item font-size-5vw" id="first" (click)="changeHeader($event);">100 Coins</div>
+            <div class="item font-size-3vw table-menu-not-active" id="second" (click)="changeHeader($event);">500 Coins</div>
+            <div class="item font-size-3vw table-menu-not-active" id="third" (click)="changeHeader($event);">1000 Coins</div>
+          </div>
+
+          <div class="ui bottom attached active tab segment" style="height: 90vh;">
+            <div class="f-size-4 bold-font-weight line-height-normal">Contest #51</div>
+
+            <div class="ui tiny progress">
+              <div class="bar" style="height: 1vmin;"></div>
+              <div class="label">
+                <span style="float: left;" class="font-size-3vw font-roboto bold-font-weight line-height-normal">Awaiting participants ...</span>
+                <span style="float: right; color: #48B1BF;" class="f-size-4 font-rancho line-height-normal">42 / 100 Joined</span>
+              </div>
+            </div>
+
+            <div class="font-size-5vw font-roboto line-height-normal pt-10">
+              Rules to Join
+            </div>
+            <div class="font-size-3vw font-roboto line-height-normal pt-5" style="margin-bottom: 7vmin;">
+              1. Lucky Draw open for 100 users.<br>
+              2. One Lucky Winner will be decided randomly and get 100 coins.<br>
+              3. You will get notification about the winner in Results page.<br>
+            </div>
+
+            <div class="font-size-3vw line-height-normal" style="color: #EF5350;" *ngIf="participationAccepted">
+              You have already participated in this event
+            </div>
+            <div class="ui fluid button line-height-normal" [class.bgBlue-text-white]="!participationAccepted" style="text-align: left; border-radius: 3vmin; font-size: 4vmin;" (click)="isParticipationAccepted()">
+              Join Now
+            </div>
+
+            <div class="ui fluid button" style="text-align: left; background: #2196F3; border-radius: 3vmin; margin-top: 5vmin; color: white; font-size: 4vmin;">
+              See Previous Results
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <app-sub-components-advertisement></app-sub-components-advertisement>
+
+
+    </div>
+  </div>
+</div>

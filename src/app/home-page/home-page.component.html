@@ -1,0 +1,37 @@
+<div class="light-to-dark-teal go-full-screen-box">
+  <img src="assets/images/vector-background.png" style="position: absolute;left: 6.03%;right: 6.03%;top: 9.42%;bottom: 0;height: 100vh;">
+  <div class="ui grid p-15">
+
+    <div class="row">
+      <div class="ui sixteen column right aligned padded grid">
+        <div class="sixteen wide column" style="padding: 0;">
+          <a routerLink="/my-profile"><img class="ui icon" src="assets/images/user.svg" style="padding-right: 5vmin; width: 11vmin;" alt="user"></a>
+          <a routerLink="/wallet"><img class="ui icon" src="assets/images/wallet.svg" style="padding-right: 5vmin; width: 11vmin;" alt="wallet"></a>
+          <img class="ui icon" src="assets/images/previous.svg" style="padding-right: 5vmin; width: 11vmin;" alt="prev" (click)="logOut()">
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="padding: 0;">
+      <div class="ui two column centered grid">
+        <div class="sixteen wide column">
+          <div class="row">
+            <div class="sixteen wide column"><h1 style="font-family: roboto; color: white; font-size: 9vw;">Cartical Games</h1></div>
+            <div class="sixteen wide column"><span style="font-family: rancho;color: white; font-size: 4.5vw">Scroll down for more</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row hide-scrollbar add-scrolling" style="padding: 0;">
+        <div class="ui two column centered grid" style="margin-bottom: 15vh;">
+          <div class="column" *ngFor="let property of boxProperties;">
+            <app-sub-components-home-boxes [image-path]="property[0]" [inside-text]="property[1]" [bg-color]="property[2]" [router-link]="property[3]" ></app-sub-components-home-boxes>
+          </div>
+        </div>
+    </div>
+
+    <app-sub-components-advertisement></app-sub-components-advertisement>
+
+  </div>
+</div>

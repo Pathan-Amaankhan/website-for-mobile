@@ -1,0 +1,9 @@
+<div class="ui modal square-box" style="width: 60%;border-radius: 5vmin;background: rgba(255, 255, 255, 0.86);">
+
+  <div class="content-in-box" style="border-radius: 5vmin;text-align: left;padding: 5vw;border: 0.5vmin solid #06BEB6;box-shadow: 0 0.4vmin 0.4vmin rgba(0, 0, 0, 0.25);">
+    <img [src]="imagePath" class="ui image" style="width: 50%">
+    <div class="bold-font-weight f-size-6 line-height-normal font-roboto" style="color: #48B1BF">{{ successText }}</div>
+    <div class="line-height-normal f-size-4" *ngIf="ticketNo">Ticket <b>{{ ticketNo }}</b></div>
+  </div>
+
+</div>

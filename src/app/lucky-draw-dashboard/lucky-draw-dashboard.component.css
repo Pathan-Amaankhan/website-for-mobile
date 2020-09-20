@@ -1,0 +1,42 @@
+.table-menu-not-active, .item.font-size-3vw.table-menu-not-active {
+  border: 0 solid black;
+  background: #EAEAEA;
+  padding: 0 10px 0 12px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#first.table-menu-not-active {
+  border: 0 solid black;
+  background: #EAEAEA;
+  padding: 0 10px 0 12px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 10px 0 0 0;
+}
+
+#second.table-menu-not-active {
+  border: 0 solid black;
+  background: #EAEAEA;
+  padding: 0 10px 0 12px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#third.table-menu-not-active {
+  border: 0 solid black;
+  background: #EAEAEA;
+  padding: 0 10px 0 12px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 0 10px 0 0;
+}
+
+#first.active {
+  border-radius: 10px 0 0 0;
+}
+
+.bgBlue-text-white {
+  background: #48B1BF;
+  color: white;
+}

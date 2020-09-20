@@ -1,0 +1,70 @@
+<div class="light-to-dark-teal go-full-screen-box">
+  <div class="ui container">
+    <div class="ui grid p-15">
+
+      <div class="row" style="height: 9vh;">
+        <div class="five wide column">
+          <img src="assets/images/left-arrow.png" style="width: 7vmin;" class="ui icon" [routerLink]="'/home'">
+        </div>
+        <div class="eleven wide column font-size-5vw" style="color: white; padding-top: 1.5vmin;">
+          Redeem
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="sixteen wide column">
+          <div class="ui card" style="border-radius: 3vmin; width: 100%;padding-bottom: 5em;height: 90vh;">
+            <div class="content">
+
+              <div style="margin-bottom: 4em;">
+                <app-sub-components-current-balance [amount]="'197.0'"></app-sub-components-current-balance>
+              </div>
+              <div class="description font-size-5vw font-roboto bold-font-weight line-height-normal" style="color: #48B1BF; padding-bottom: 6vmin;">
+                100 Coins = 1/- INR
+              </div>
+
+              <div class="ui grid plr-10">
+                <div class="row" style="background: #48B1BF; padding: 0;">
+                  <div class="ten wide column text-white on-side" style="position: absolute;">Paytm</div>
+                  <div class="six wide column right floated ui button font-roboto bold-font-weight off-side" style="padding-left: 0; padding-right: 0;" (click)="changeThePanel($event)">Medimetry</div>
+                </div>
+              </div>
+
+              <div class="description" style="margin-top: 3vmin;">
+                <div class="ui one column grid">
+                  <div class="row">
+
+                    <div class="column pb-5">
+                      <div class="ui fluid input">
+                        <input type="text" placeholder="Enter 10 digit mobile no." class="font-roboto font-size-3vw" style="border-radius: 1em;background: #F8F8F8;">
+                      </div>
+                    </div>
+
+                    <div class="column pb-5">
+                      <div class="ui fluid input">
+                        <input type="text" placeholder="Enter coins to redeem" class="font-roboto font-size-3vw" style="border-radius: 1em;font-size: 3vw;background: #F8F8F8;">
+                      </div>
+                    </div>
+
+                    <div class="column">
+                      <div class="description" style="margin-bottom: 2em;">
+                        <button class="ui fluid button" onclick="$('.ui.modal').modal('show');" style="background: #48B1BF; color: white; border-radius: 3vmin; font-size: 4vw;">Redeem Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <app-sub-components-redeem-request-modal [image-src]="'assets/images/success-tick-icon.png'" [success-text]="'Redeem Request Raised'" [ticket-number]="'#1032412'"></app-sub-components-redeem-request-modal>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <app-sub-components-advertisement></app-sub-components-advertisement>
+
+
+    </div>
+  </div>
+</div>

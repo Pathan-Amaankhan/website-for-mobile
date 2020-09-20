@@ -1,0 +1,83 @@
+@keyframes spin {
+  0% { -webkit-transform: rotate(0deg); transform-origin: 50% 52.5% }
+  10% { -webkit-transform: rotate(540deg); transform-origin: 50% 52.5% }
+  20% { -webkit-transform: rotate(720deg); transform-origin: 50% 52.5% }
+  40% { -webkit-transform: rotate(1080deg); transform-origin: 50% 52.5% }
+  70% { -webkit-transform: rotate(1440deg); transform-origin: 50% 52.5% }
+  100% { -webkit-transform: rotate(1800deg); transform-origin: 50% 52.5% }
+}
+
+.container-spin {
+  animation: spin 0.5s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInTransition {
+  animation: fadeIn 1s linear;
+}
+
+.d1 {
+  transition: all 1s linear;
+}
+
+.top40 {
+  top: 40%;
+}
+
+.rotate0 {
+  transform: rotate(0);
+  transform-origin: 50% 52.5%;
+}
+
+.rotate36 {
+  transform: rotate(36deg);
+  transform-origin: 50% 52.5%;
+}
+
+.rotate72 {
+  transform: rotate(72deg);
+  transform-origin: 50% 52.5%;
+}
+
+.rotate108 {
+  transform: rotate(108deg);
+  transform-origin: 50% 52.5%;
+}
+
+.rotate144 {
+  transform: rotate(144deg);
+  transform-origin: 50% 52.5%;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+  transform-origin: 50% 52.5%;
+}
+
+.rotate216 {
+  transform: rotate(216deg);
+  transform-origin: 50% 52.5%;
+}
+
+.rotate252 {
+  transform: rotate(252deg);
+  transform-origin: 50% 52.5%;
+}
+
+.rotate288 {
+  transform: rotate(288deg);
+  transform-origin: 50% 52.5%;
+}
+
+.rotate324 {
+  transform: rotate(324deg);
+  transform-origin: 50% 52.5%;
+}

@@ -1,0 +1,44 @@
+<div class="light-to-dark-teal go-full-screen-box">
+  <div class="ui container">
+    <div class="ui modal">
+      <div class="scrolling content" [innerHTML]="privacyPolicy"></div>
+    </div>
+    <div class="ui grid" style="position: absolute; top: 25vmax; left: 18vmin;">
+      <div class="row">
+        <div class="sixteen wide column">
+          <img src="assets/images/lato-logo.png" style="width: 35vmin;">
+        </div>
+        <div class="sixteen wide column">
+          <div class="text-white font-size-17vw">
+            <span class="bold-font-weight letter-spacing-1 line-height-normal">
+              Cartical
+            </span>
+            <span class="font-rancho" style="line-height: 0.6;">
+              Games
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ui grid centered container" style="position: absolute; bottom: 0; left: 0;">
+      <div class="row">
+        <div id="name"></div>
+        <div class="sixteen wide column pb-5">
+          <button class="ui fluid large button" id="customBtn" style="background-color:  #ffffff; border-radius: 0.5rem;" onclick="Android.showLoginWithGoogle();">
+            <img src="assets/images/google-logo.svg" class="ui icon" style="height: 4vw;">
+            <span class="font-roboto text-black font-size-5vw light-font-weight">Sign-in with Google</span>
+          </button>
+        </div>
+        <div class="sixteen wide column pb-10">
+          <span class="ui small label" style="background: transparent;">
+            <span class="text-white font-size-3vw">
+              By signing up I accept & agree to <u>Terms of use</u> and <u (click)="hello()">Privacy Policy</u>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

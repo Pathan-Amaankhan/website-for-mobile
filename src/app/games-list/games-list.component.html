@@ -1,0 +1,77 @@
+<div class="light-to-dark-teal go-full-screen-box">
+  <div class="ui container">
+    <div class="ui grid p-15">
+      <div class="row">
+        <div class="sixteen wide column">
+          <img src="assets/images/left-arrow.png" style="width: 7vmin;" class="ui icon" [routerLink]="'/home'">
+        </div>
+      </div>
+
+      <div class="row" style="padding-top: 5vmin;">
+        <div class="sixteen wide column">
+          <div class="bold-font-weight font-roboto text-white font-size-9vw">Play to earn coins</div>
+          <div class="font-rancho text-white pt-5 line-height-normal" style="font-size: 5vw;">More games coming soon ...</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <ng-component *ngComponentOutlet="gameComponent"></ng-component>
+      </div>
+
+      <div class="row" *ngIf="!gameStarted">
+        <div class="sixteen wide column">
+          <div class="ui card add-scrolling hide-scrollbar" style="height: 80vh; border-radius: 3vmin; width: 100%; padding-bottom: 25vmin;">
+
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+            <div class="content" style="padding-bottom: 0">
+              <app-sub-components-game-outlet (click)="startGame($event)" game-icon="assets/images/2048_logo.png" game-name="Fun 2048" game-id="2048"></app-sub-components-game-outlet>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <app-sub-components-advertisement></app-sub-components-advertisement>
+    </div>
+
+  </div>
+</div>

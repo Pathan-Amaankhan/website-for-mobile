@@ -1,0 +1,13 @@
+.on-side {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3vw;
+  text-decoration: underline;
+}
+
+.off-side {
+  border: 0.1em solid #48B1BF;
+  border-radius: 0;
+  font-weight: bolder;
+  font-size: 3vw;
+}
