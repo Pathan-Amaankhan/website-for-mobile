@@ -4,12 +4,12 @@
       <app-sub-components-redeem-request-modal [image-src]="'assets/images/success-tick-icon.png'" [success-text]="'Participation Accepted'"></app-sub-components-redeem-request-modal>
       <div class="row">
         <div class="five wide column">
-          <img src="assets/images/left-arrow.png" class="ui icon" [routerLink]="'/home'">
+          <img src="assets/images/left-arrow.png" style="width: 7vmin;" class="ui icon" [routerLink]="'/home'">
         </div>
         <div class="eleven wide column font-size-5vw" style="color: white;"></div>
       </div>
 
-      <div class="row" style="padding-top: 1.5em;">
+      <div class="row" style="padding-top: 5vmin;">
         <div class="sixteen wide column">
           <div class="bold-font-weight font-roboto text-white font-size-9vw">Lucky Draw</div>
           <div class="font-rancho text-white pt-5 line-height-normal" style="font-size: 5vw;">One lucky winner, for every contest chose randomly by the editor.</div>
@@ -24,7 +24,7 @@
             <div class="item font-size-3vw table-menu-not-active" id="third" (click)="changeHeader($event);">1000 Coins</div>
           </div>
 
-          <div class="ui bottom attached active tab segment" style="height: 90vh;">
+          <div class="ui bottom attached active tab segment add-scrolling hide-scrollbar" style="padding-bottom: 52%;">
             <div class="f-size-4 bold-font-weight line-height-normal">Contest #51</div>
 
             <div class="ui tiny progress">
